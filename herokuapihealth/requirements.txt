@@ -1,0 +1,4 @@
+Flask==2.0.1
+Flask_RESTful==0.3.8
+numpy==1.19.5
+pymongo==3.11.0

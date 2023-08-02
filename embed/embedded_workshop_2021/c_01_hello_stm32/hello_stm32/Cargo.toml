@@ -1,0 +1,13 @@
+[package]
+name = "hello_stm32"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m = "0.7"
+cortex-m-rt = "0.7"
+# embedded-hal = "0.2"
+stm32f4xx-hal = { version = "0.13", features = ["rt", "stm32f413","fsmc_lcd", "fsmc", "sdio", "sdio-host", "otg-fs", "usb_fs"] }
+# rtt-target = {version="0.3.1",  features = ["cortex-m"]}
+panic-halt = "0.2.0"
+embedded-graphics = "0.7.1"

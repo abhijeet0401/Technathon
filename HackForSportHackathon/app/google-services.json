@@ -1,0 +1,96 @@
+{
+  "project_info": {
+    "project_number": "979993896247",
+    "firebase_url": "https://health-cdbab-default-rtdb.firebaseio.com",
+    "project_id": "health-cdbab",
+    "storage_bucket": "health-cdbab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979993896247:android:10e230dd5e67eaeec226b2",
+        "android_client_info": {
+          "package_name": "com.example.health"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979993896247-33go92qlibrdip6937234dta6tftvrpu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.health",
+            "certificate_hash": "cd735233223db90235dab85f14a0c0d9b3e62c60"
+          }
+        },
+        {
+          "client_id": "979993896247-b1bq796omkk52rgqtf9dlf4i959akcjh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.health",
+            "certificate_hash": "0a5a75450202592c9643183c3edadd77b881d329"
+          }
+        },
+        {
+          "client_id": "979993896247-fh10o5jq4o96kt8j7it9agmac1c3d7t8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.health",
+            "certificate_hash": "5b7c64a8c3ba07eb98fb08be731d75a3d0442421"
+          }
+        },
+        {
+          "client_id": "979993896247-h4sklompheqm016r5rg1nb62recubsn4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.health",
+            "certificate_hash": "a5061311d93800330257e45a2a0eab92379b4bd9"
+          }
+        },
+        {
+          "client_id": "979993896247-haa7i81nlh55efs4re6hibmpne9it97o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.health",
+            "certificate_hash": "eefc4ab5c08ee99c40a7586300327168cf337194"
+          }
+        },
+        {
+          "client_id": "979993896247-uul866rm41e23q0qgsi40h7k2ogrrr1s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.health",
+            "certificate_hash": "1e2464f010acb31b5bc968f9e164323f6053125c"
+          }
+        },
+        {
+          "client_id": "979993896247-vb72k38ir6ev41i14mf4bhfik4t6drl9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.health",
+            "certificate_hash": "3fe6355098a0f1de2749a59cfa844073b91cb880"
+          }
+        },
+        {
+          "client_id": "979993896247-rrt3rstn55aiqtcal6r78v0ukv6idng8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8vM5i3WuTtFt9GyeDt65GmNeOlQh-fnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979993896247-hhmnvf0hpum2fifvdueb9f50750ndvo4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+**/local
+**/*.rs.bk
+/cobertura.xml
+/coverage.txt
+
+# generated from protobuf
+/vls-proxy/src/grpc/hsmd.rs
+
+/target/
+/*/target/
+
+/.lightning-signer/
+signer.kv
+
+/TAGS
+rusty-tags.emacs
+.DS_Store

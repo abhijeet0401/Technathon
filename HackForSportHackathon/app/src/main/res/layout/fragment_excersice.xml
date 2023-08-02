@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center|clip_vertical"
+
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background"
+            android:elevation="30dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/logo" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_check"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+               android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/me"
+                app:civ_border_color="#2F2F2F"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image_check"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/how"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Hello Abhijeet"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/how"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/howareoyu"
+                android:fontFamily="@font/montserrat"
+                android:text="How are you doing today"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_click_11"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/howareoyu"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/baseline_verified_24"
+                />
+
+            <Button
+                android:id="@+id/btn_data"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/howareoyu"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/baseline_data_saver_off_24"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="75dp" />
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/howareoyu"
+                android:layout_marginLeft="107dp"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@+id/btn_data"
+                android:background="@drawable/baseline_upload_24"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="75dp" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+
+
+                android:layout_marginLeft="90dp"
+
+
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/profile_image_check"
+                android:background="@drawable/baseline_logout_24"
+                app:cornerRadius="75dp" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background"
+            android:elevation="30dp"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/heart_header"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="Heart Beat"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/iv_heart"
+                android:layout_width="106dp"
+                android:layout_height="102dp"
+                android:layout_below="@+id/heart_header"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="237dp"
+                android:layout_marginRight="237dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_baseline_favorite_24" />
+
+            <TextView
+                android:id="@+id/txt_heart_rate"
+                android:layout_width="135dp"
+                android:layout_height="111dp"
+                android:layout_below="@+id/iv_heart"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="-79dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:text="--"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_start"
+                android:layout_width="88dp"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="95dp"
+                android:layout_toStartOf="@+id/txt_heart_rate"
+                android:layout_toLeftOf="@+id/txt_heart_rate"
+                android:background="@drawable/button_start"
+                app:backgroundTint="@null"
+                android:text="@string/btn_start"
+                android:textColor="@color/AlicBlue" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_stop"
+                android:layout_width="88dp"
+                android:layout_height="36dp"
+                android:layout_alignBottom="@+id/txt_heart_rate"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="36dp"
+                android:layout_toStartOf="@+id/txt_heart_rate"
+                android:layout_toLeftOf="@+id/txt_heart_rate"
+                android:background="@drawable/btn_stop"
+                app:backgroundTint="@null"
+                android:text="@string/btn_stop"
+                android:textColor="@color/AlicBlue" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+
+            android:layout_height="180dp"
+            android:layout_marginTop="30dp"
+
+            android:elevation="30dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <RelativeLayout
+                android:layout_width="175dp"
+                android:layout_height="165dp"
+                android:background="@drawable/bg_step"
+                android:layout_weight="1">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/circularProgressBar_steps"
+                    android:layout_width="134dp"
+                    android:layout_height="134dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    app:cpb_background_progressbar_color="#E3E672"
+                    app:cpb_background_progressbar_width="3dp"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progressbar_color="#FAFF11"
+                    app:cpb_progressbar_width="10dp"
+                    app:cpb_round_border="false" />
+
+                <TextView
+                    android:id="@+id/stepabovetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="8dp"
+
+                    android:text="Steps"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#E3E672" />
+
+
+                <ImageView
+                    android:id="@+id/query"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/stepabovetext"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_run_24" />
+
+                <TextView
+                    android:id="@+id/txt_query_steps"
+                    android:layout_width="87dp"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/query"
+
+                    android:layout_alignStart="@+id/circularProgressBar_steps"
+                    android:layout_alignEnd="@+id/circularProgressBar_steps"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"
+
+
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#E3E672"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="175dp"
+                android:layout_height="165dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_burn_same"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/calorieheader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Calorie Burnt"
+                    android:textColor="#D94328" />
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/circularProgressBar_calorie"
+                    android:layout_width="134dp"
+                    android:layout_height="134dp"
+                    android:layout_below="@+id/calorieheader"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:layout_centerVertical="true"
+                    app:cpb_background_progressbar_color="#b6bbd8"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progressbar_color="#3f51b5"
+                    app:cpb_progressbar_width="10dp"
+                    app:cpb_round_border="false" />
+
+                <ImageView
+                    android:id="@+id/calorie"
+                    android:layout_width="52dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@+id/calorieheader"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/ic_calorie" />
+
+                <TextView
+                    android:id="@+id/txt_calorie"
+                    android:layout_width="67dp"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/calorie"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#D94328"
+
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="15dp"
+            android:elevation="30dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="175dp"
+                android:layout_height="165dp"
+                android:background="@drawable/bg_sleep_fix"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/sleepheader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="True Sleep"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#00D0A3" />
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/circularProgressBar_sleep"
+                    android:layout_width="134dp"
+                    android:layout_height="134dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/sleepheader"
+                    app:cpb_background_progressbar_color="#b6bbd8"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progressbar_color="#3f51b5"
+                    app:cpb_progressbar_width="10dp"
+                    app:cpb_round_border="false" />
+
+
+                <ImageView
+                    android:id="@+id/sleep"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+
+                    android:layout_alignStart="@+id/circularProgressBar_sleep"
+                    android:layout_alignEnd="@+id/circularProgressBar_sleep"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="36dp"
+                    android:src="@drawable/baseline_nights_stay_24" />
+
+                <TextView
+                    android:id="@+id/txt_sleep"
+                    android:layout_width="67dp"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/sleep"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="43dp"
+                    android:layout_marginRight="43dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#00D0A3"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="175dp"
+                android:layout_height="165dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/bg_spo2">
+
+                <TextView
+                    android:id="@+id/spo2_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="spO2"
+                    android:fontFamily="@font/montserrat_bold"
+
+                    android:textColor="#488DFF" />
+
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/circularProgressBar_spo2"
+                    android:layout_width="134dp"
+                    android:layout_height="134dp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    app:cpb_background_progressbar_color="#b6bbd8"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progressbar_color="#3f51b5"
+                    app:cpb_progressbar_width="10dp"
+                    app:cpb_round_border="false" />
+
+                <ImageView
+                    android:id="@+id/spo2"
+                    android:layout_width="57dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/spo2_header"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/baseline_air_24" />
+
+                <TextView
+                    android:id="@+id/txt_spo2"
+                    android:layout_width="67dp"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/spo2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="36dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#488DFF"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
